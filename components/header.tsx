@@ -17,7 +17,6 @@ const Header: FC<headerProps> = ({}) => {
                </div>
             </Link>
             <div className='flex items-center space-x-4 lg:space-x-6'>
-               <ThemeToggle />
                <div>
                   <SignedIn>
                      {/* Mount the UserButton component */}
@@ -30,6 +29,7 @@ const Header: FC<headerProps> = ({}) => {
                      </Link>
                   </SignedOut>
                </div>
+               <ThemeToggle />
             </div>
          </nav>
       </header>

@@ -1,13 +1,12 @@
-import React from "react";
+import DropAndDrag from '@/components/dropAndDrag';
+import React from 'react';
 
 const Dashboard = () => {
-  return (
-    <div className="flex justify-center items-center">
-      <h2 className="font-bold capitalize text-2xl text-gray-800">
-        Dashboard Page..
-      </h2>
-    </div>
-  );
+   return (
+      <div className='flex items-center justify-center '>
+         <DropAndDrag />
+      </div>
+   );
 };
 
 export default Dashboard;
