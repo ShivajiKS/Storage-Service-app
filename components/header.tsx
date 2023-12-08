@@ -18,10 +18,6 @@ const Header: FC<headerProps> = ({}) => {
             </Link>
             <div className='flex items-center space-x-4 lg:space-x-6'>
                <div>
-                  <SignedIn>
-                     {/* Mount the UserButton component */}
-                     <UserButton afterSignOutUrl='/' />
-                  </SignedIn>
                   <SignedOut>
                      {/* Signed out users get sign in button */}
                      <Link href={'/sign-in'}>
@@ -30,6 +26,10 @@ const Header: FC<headerProps> = ({}) => {
                   </SignedOut>
                </div>
                <ThemeToggle />
+               <SignedIn>
+                  {/* Mount the UserButton component */}
+                  <UserButton afterSignOutUrl='/' />
+               </SignedIn>
             </div>
          </nav>
       </header>
